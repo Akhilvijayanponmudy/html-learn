@@ -1,0 +1,95 @@
+.main {
+    position: relative;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.marquee-container {
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+}
+
+
+
+.marquee-container .marquee {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+
+
+
+.marquee-container-2 {
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+}
+
+
+.marquee-container .marquee2 {
+    animation-delay: 15s;
+}
+
+.marquee-container-2 .marquee_sec {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marqueereverse 30s linear infinite;
+}
+
+.marquee-container-2 .marquee2_sec {
+    animation-delay: 15s;
+}
+
+.marquee-container b {
+    padding-left: 50px;
+}
+
+.marquee-container-2 b {
+    padding-right: 50px;
+}
+
+@keyframes marquee {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes marqueereverse {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.m-common {
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+}
+
+
+.marquee_sec, .marquee {
+    height: 100%;
+    align-items: center;
+    font-size: 50px;
+}

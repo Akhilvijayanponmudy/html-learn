@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.anima {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    animation: animName 2s linear infinite;
+
+}
+
+.wrap img, .wrap-2 img {
+    width: 100%;
+    animation: animName .8s linear infinite;
+}
+
+.vechile-wrap {
+    width: 250px;
+    margin-top: 365px;
+    position: relative;
+    animation: vechileMoving 15s linear infinite;
+}
+
+.vechile-wrap img {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.wrap {
+    max-width: 44px;
+    position: absolute;
+    bottom: 31px;
+    left: 27px;
+    z-index: 0;
+}
+
+.wrap-2 {
+    max-width: 44px;
+    position: absolute;
+    bottom: 34px;
+    right: 30px;
+    z-index: 0;
+
+}
+
+@keyframes animName {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.road-wrap {
+    padding-top: 57px;
+}
+
+
+.road-wrap img {
+    height: 100px;
+    width: 200vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 8;
+    animation: moving 3s linear infinite;
+}
+
+
+.sky-wrap {
+    width: 200vw;
+    height: 50vh;
+    animation: moving 15s linear infinite 1s;
+    position: absolute;
+    top: -10px;
+}
+
+.sky-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.vechile-wrap-2{
+    position: absolute;
+}
+
+.main-wrap{
+    overflow: hidden;
+}
+@keyframes moving {
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+.main-wrap {
+    position: relative;
+}
+
+
+
+@keyframes vechileMoving {
+    0% {
+        margin-left: -20vw;
+    }
+
+    100% {
+        margin-left: 110vw;
+    }
+}

@@ -1,0 +1,692 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .lambo-logo-wrap {
+        max-width: 60px;
+        height: auto;
+
+    }
+
+    .lambo-logo-wrap .header-logo {
+        max-width: 100%;
+    }
+
+    header {
+        padding: 10px 50px;
+        background-color: #000;
+
+    }
+
+    header .header-nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    header .header-nav ul li {
+        padding: 0 15px 0 0;
+
+    }
+
+    header .header-nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    header .header-nav {
+        justify-content: center;
+    }
+
+
+
+    .d-flex {
+        display: flex;
+    }
+
+    .jus-end {
+        justify-content: end;
+    }
+
+    header .col-12 {
+        align-items: center;
+    }
+
+
+    header .second-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    header .header-icons li a img {
+        max-width: 100%;
+    }
+
+    header .header-icons li {
+        max-width: 40px;
+    }
+
+    .banner-video {
+        position: relative;
+    }
+    .banner-video h1{
+        opacity: 1;
+    }
+    .banner-video h6{
+        opacity: 1;
+    }
+
+    .banner-wrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 92vh;
+        overflow: hidden;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner-wrap video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .banner-texts {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        color: #fff;
+        max-width: 550px;
+    }
+
+    .banner-texts .banner-buttons img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-texts .banner-buttons {
+        max-width: 100px;
+        position: relative;
+    }
+
+    .banner-texts .banner-buttons .button-arrow {
+        position: absolute;
+        width: 30px;
+        transform: translate(-40%, -50%);
+        top: 50%;
+        left: 50%;
+
+
+
+    }
+
+
+    .f-h6 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .f-h1 {
+        font-size: 90px;
+        font-weight: 700;
+    }
+
+    .des-none {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* Swiper Section 2 */
+
+    .lamboSwiperSecond {
+        height: 70vh;
+        background-color: black;
+
+    }
+
+    .swiper-sec-2 .swi-card {
+        width: 100%;
+        height: 100%;
+
+
+        -webkit-transform: skew(20deg);
+        -moz-transform: skew(20deg);
+        -ms-transform: skew(20deg);
+        transform: skew(20deg);
+        height: 100%;
+        width: 236%;
+        transform-origin: bottom left;
+        -webkit-background-position: center center;
+        background-position: center center;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-color: black;
+        /* position: relative; */
+    }
+
+    .swiper-sec-2 .swi-card img {
+        /* width: 100%; */
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-slide {
+        width: 100%;
+    }
+
+
+
+
+    .swiper-sec-2 .swiper-slide {
+        transform: skew(-20deg);
+        transform-origin: bottom left;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        width: 50vw;
+        transition: transform 0.3s ease;
+
+    }
+
+    .swiper-sec-2 .swiper-slide::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        opacity: 1;
+        -webkit-transition: opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out;
+    }
+
+
+    .swiper-sec-2 .swiper-slide-prev::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        opacity: 1;
+        -webkit-transition: opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out;
+    }
+
+    .swiper-sec-2 .swiper-slide-active::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.432);
+        opacity: 1;
+        -webkit-transition: opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out;
+    }
+
+    .swiper-sec-2 .swiper-slide-next::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        opacity: 1;
+        -webkit-transition: opacity 0.5s ease-out;
+        transition: opacity 0.5s ease-out;
+    }
+
+    .swiper-sec-2 .swiper-slide.swiper-slide-prev {
+        width: 20vw !important;
+    }
+
+    .swiper-sec-2 .swiper-slide-active {
+        width: 30vw !important;
+    }
+
+    .swiper-sec-2 .swiper-slide-next {
+        width: 50vw !important;
+
+    }
+
+
+
+    .swiper-sec-2 .swiper-wrapper {
+        position: relative;
+    }
+
+    .swiper-sec-2 .text-wrap {
+        color: #fff;
+        position: absolute;
+        bottom: 0;
+        z-index: 999;
+    }
+
+
+    .swiper-sec-2 .swiper-slide .text-wrap {
+        transition: transform 0.3s ease;
+    }
+
+    .swiper-sec-2 .swiper-slide .text-wrap {
+        display: none;
+    }
+
+    .swiper-sec-2 .swiper-slide-next .text-wrap {
+        display: block;
+    }
+
+    .swiper-button-prev:after {
+        content: '';
+        background-image: url(imgs/next-swi.svg);
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        position: absolute;
+
+        width: 100px;
+        bottom: -210px;
+        left: 1030px;
+    }
+
+    .swiper-button-next:after {
+        content: '';
+        background-image: url(imgs/next-swi.svg);
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100px;
+        rotate: 180deg;
+        bottom: -210px;
+        left: -750px;
+    }
+
+
+    /* Swiper Section */
+
+    /* revuelto section */
+
+    .revuelto-section {
+        background-image: url(imgs/revuelto_home.webp);
+        background-repeat: no-repeat;
+        min-height: 745px;
+        opacity: 0;
+    }
+
+    /* revuelto section */
+
+    .on-position::after {
+        content: '';
+        background-image: url(imgs/logo.webp);
+        content: '';
+        background-image: url(imgs/logo.webp);
+        width: 150px;
+        display: block;
+        height: 150px;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 50%;
+        left: 50px;
+        z-index: 9;
+    }
+
+
+
+    .gsap-sec {
+        min-height: 80vh;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .gsap-sec .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .gsap-sec .gsap-text {
+        opacity: 0;
+        transform: translateX(-100px);
+        will-change: opacity, transform;
+    }
+
+    .test-sec {
+        --target: 100%;
+        width: 100%;
+        background: linear-gradient(to right, #000 var(--target), #fff var(--target));
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        opacity: 1;
+        position: relative;
+    }
+
+
+    .test-sec .f-h1 {
+
+        color: #000;
+        opacity: 1;
+        z-index: 50;
+
+    }
+
+    .back_img:after {
+        z-index: 99;
+        content: "";
+        background-image: url(imgs/revuelto_home.webp);
+        background-repeat: no-repeat;
+        width: 100%;
+        display: block;
+        height: 100vh;
+        opacity: .5;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: cover;
+    }
+
+
+
+
+
+    .text-moving {
+        height: 100px;
+        background-color: #000;
+        color: #fff;
+        width: 100%;
+        overflow: hidden;
+       
+    }
+
+    .text-moving .text-wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .text-moving .text-wrap h1 {
+        position: absolute;
+    }
+
+.accordion{
+    margin-bottom: 50px;
+}
+
+
+
+}
+
+/* .box{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    background-color: blue;
+    z-index: 5;
+    transform: translate(-50%,-50%);
+} */
+
+
+
+@media only screen and (max-width: 1199px) {
+
+    .lambo-logo-wrap {
+        max-width: 60px;
+        height: auto;
+
+    }
+
+    .lambo-logo-wrap .header-logo {
+        max-width: 100%;
+    }
+
+    header {
+        padding: 10px 0;
+        background-color: #000;
+
+    }
+
+    header .row {
+        --bs-gutter-x: 0;
+
+    }
+
+    header .header-nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    header .header-nav ul li {
+        padding: 0 15px 0 0;
+
+    }
+
+    header .header-nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    header .header-nav {
+        justify-content: center;
+    }
+
+
+
+    .d-flex {
+        display: flex;
+    }
+
+    .jus-end {
+        justify-content: end;
+    }
+
+    header .col-12 {
+        align-items: center;
+    }
+
+
+    header .second-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    header .header-icons li a img {
+        max-width: 100%;
+    }
+
+    header .header-icons li {
+        max-width: 40px;
+    }
+
+
+
+    .lambo-logo-wrap {
+        max-width: 50px;
+        height: auto;
+
+    }
+
+    .lambo-logo-wrap .header-logo {
+        max-width: 100%;
+        margin-left: 15px;
+    }
+
+    .m-none {
+        display: none !important;
+        opacity: 0;
+    }
+
+    header .mob-btn {
+        max-width: 50px;
+    }
+
+    header .mob-btn img {
+        width: 100%;
+        height: auto;
+    }
+
+    header .mob-btn-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner-video {
+        position: relative;
+    }
+
+    .banner-wrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner-wrap video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .banner-texts {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        color: #fff;
+        max-width: 270px;
+    }
+
+    .banner-texts .banner-buttons img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-texts .banner-buttons {
+        max-width: 60px;
+        position: relative;
+    }
+
+    .banner-texts .banner-buttons .button-arrow {
+        position: absolute;
+        width: 20px;
+        transform: translate(-40%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+
+
+    .f-h6 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .f-h1 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+
+
+    /* Swiper Section 2 */
+
+    .lamboSwiperSecond {
+        height: 70vh;
+        background-color: black;
+
+    }
+
+    .swi-card {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .swi-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .swiper-button-prev:after {
+        content: '';
+        background-image: url(imgs/next-swi.svg);
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        position: absolute;
+
+        width: 100px;
+
+        bottom: -220px;
+        left: 230px;
+    }
+
+    .swiper-button-next:after {
+        content: '';
+        background-image: url(imgs/next-swi.svg);
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        position: absolute;
+        rotate: 180deg;
+        bottom: -220px;
+        right: 30px;
+    }
+
+
+
+    /* Swiper Section */
+
+
+
+
+
+
+}

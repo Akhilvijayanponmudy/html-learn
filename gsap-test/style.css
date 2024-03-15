@@ -1,0 +1,10 @@
+.section-btm {
+  height: 100vh;
+}
+
+
+.text {
+  opacity: 0;
+  transform: translateX(-100px);
+  will-change: opacity, transform;
+}

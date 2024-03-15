@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>GSAP Animation</title>
+  <!-- Include GSAP -->
+
+
+</head>
+
+<body>
+
+  <section class="maindiv">
+    <div class="animatedDiv" style="width: 100px; height: 100px; background-color: red;"></div>
+    <h1 class="text">hloo</h1>
+    <h1 class="text">hloo</h1>
+    <h1 class="text">hloo</h1>
+  </section>
+  <section class="section-btm">
+
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+
+    // GSAP Animation//list as many as you'd like
+    gsap.registerPlugin(ScrollTrigger);
+
+    let mainDiv = document.querySelector('.maindiv')
+
+    let ctx = gsap.context((self) => {
+
+      let main = self.selector('.animatedDiv')
+      let textElm = self.selector('.text')
+
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: textElm,
+          start: "top",
+          end: "bottom",
+          markers: true,
+        }
+      })
+
+      tl.to(textElm, {
+        opacity: 1,
+        x: 0,
+        stagger: 1,
+      })
+
+
+      gsap.to(main, { duration: 2, x: 200, rotation: 360, backgroundColor: "blue" });
+
+    }, mainDiv);
+
+
+  </script>
+
+</body>
+
+</html>
