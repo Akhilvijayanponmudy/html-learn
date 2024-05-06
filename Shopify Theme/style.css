@@ -11,6 +11,15 @@
     margin: 0;
 }
 
+body {
+    background-color: #e4e4e4;
+}
+
+.align-cen {
+    align-items: center;
+}
+
+
 @media (min-width: 1200px) {
 
     .container,
@@ -20,6 +29,18 @@
     .container-xl {
         max-width: 1580px;
     }
+}
+
+
+header .mob-header {
+    display: none;
+}
+
+/* header */
+header ul,
+header span, 
+header figure {
+    margin-bottom: 0;
 }
 
 header .top-header {
@@ -34,23 +55,23 @@ header .top-header .site-logo {
     align-items: center;
 }
 
-header .top-header .search-bar {
+header .search-bar {
     height: 100%;
     background: #fff;
     border-radius: 50px;
 }
 
-header .top-header .search-bar form {
+header .search-bar form {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-header .top-header .search-bar input {
+header .search-bar input {
     border: none;
 }
 
-header .top-header .search-bar input[type="text"] {
+header .search-bar input[type="text"] {
     width: 80%;
     background-color: #ffffff;
     border-radius: 50px;
@@ -60,7 +81,7 @@ header .top-header .search-bar input[type="text"] {
     font-size: 16px;
 }
 
-header .top-header .search-bar input[type="submit"] {
+header .search-bar input[type="submit"] {
     width: 20%;
     height: 100%;
     background-color: #ffffff;
@@ -69,7 +90,7 @@ header .top-header .search-bar input[type="submit"] {
 
 
 header .top-header .site-logo img {
-    width: 100%;
+    width: auto;
     height: 25px;
 }
 
@@ -90,6 +111,7 @@ header .top-header .number-sec a {
 
 header .top-header .number-sec span {
     margin: 0;
+    font-size: 16px;
 }
 
 header .top-header .number-sec .card-title {
@@ -109,3 +131,133 @@ header .top-header .number-sec .num-link-wrap {
     display: flex;
     flex-direction: column;
 }
+
+
+@media (max-width: 1209px) {
+    header .top-header .number-sec i {
+        font-size: 19px;
+    }
+
+    header .top-header .number-sec span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 998px) {
+    header .top-header {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+header .bottom-header {
+    background-color: #fff;
+    padding: 15px 0;
+}
+
+header .bottom-header button {
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    padding: 7px 20px;
+}
+
+header .bottom-header .offer-btn {
+    align-items: center;
+    background-color: #ffebd9;
+    margin-right: 10px;
+
+}
+
+header .bottom-header .new-arrival-btn {
+    align-items: center;
+    background-color: #e1f0d8;
+}
+
+header .bottom-header .offer-btn::before {
+    content: ' ';
+    background-image: url(./assets/photograph-thunder-svgrepo-com.svg);
+    width: 20px;
+    display: block;
+    height: 20px;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+header .bottom-header .new-arrival-btn::before {
+    content: ' ';
+    background-image: url(./assets/tick-circle-svgrepo-com.svg);
+    width: 20px;
+    display: block;
+    height: 20px;
+    background-size: cover;
+    margin-right: 5px;
+
+}
+
+
+header .bottom-header .menus {
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+header .bottom-header .menus li {
+    padding-left: 10px;
+}
+
+header .bottom-header .button-group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1209px) {
+    header .bottom-header button {
+
+        padding: 7px 7px;
+    }
+
+}
+
+@media (max-width: 998px) {
+    header .bottom-header {
+        display: none;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 998px) {
+    header .mob-header {
+        display: block;
+        background-color: var(--background-color);
+    }
+
+    header .mob-header .search-bar {
+        width: 100%;
+        height: 35px;
+    }
+    header .mob-header .mob-logo {
+        width: 100%;
+        height: 100%;
+    }
+    header .mob-header .mob-logo img{
+        width: 40px;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+/* header */
