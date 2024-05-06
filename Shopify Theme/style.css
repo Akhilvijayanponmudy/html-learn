@@ -38,7 +38,7 @@ header .mob-header {
 
 /* header */
 header ul,
-header span, 
+header span,
 header figure {
     margin-bottom: 0;
 }
@@ -48,7 +48,7 @@ header .top-header {
     padding: 15px 0;
 }
 
-header .top-header .site-logo {
+header .site-logo {
     width: 100%;
     height: 100%;
     display: flex;
@@ -245,15 +245,32 @@ header .bottom-header .button-group {
         width: 100%;
         height: 35px;
     }
+
     header .mob-header .mob-logo {
         width: 100%;
         height: 100%;
     }
-    header .mob-header .mob-logo img{
+
+    header .mob-header .mob-logo img {
         width: 40px;
         height: auto;
     }
+
+    header .mob-header .icon-group {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header .mob-header .icon-group i {
+        font-size: 27px;
+        color: #fff;
+    }
+    
 }
+
+
 
 
 
