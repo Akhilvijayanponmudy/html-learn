@@ -1,0 +1,38 @@
+section.hot-deal {
+    font-size: var(--font_size_plus1);
+    color: var(--dark-color);
+    margin-bottom: 25px;
+    margin-top: 25px;
+    letter-spacing: -.5px;
+}
+
+section.hot-deal .hot-deal-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.hot-deal .hot-deal-wrap figure{
+margin-right: 10px;
+}
+section.hot-deal .hot-deal-wrap figure img{
+width: 100%;
+height: 100%;
+}
+
+section.hot-deal .hot-deal-wrap span a {
+    font-weight: var(--font-weight-500);
+    border-bottom: 2px solid;
+    margin-left: 10px;
+    line-height: normal;
+    color: var(--dark-color);
+}
+
+section.hot-deal .hot-deal-wrap span::after {
+    content: 'HOT';
+    padding: 0px 15px;
+    background: red;
+    text-align: center;
+    border-radius: 51px;
+    color: #fff;
+    margin-left: 10px;
+}

@@ -50,7 +50,18 @@ const closeBtn = document.querySelector('.mob-close-btn');
 
 closeBtn.addEventListener('click', function () {
     mobWrap.classList.remove('active');
-        mobWrap.classList.add('notActive');
-        document.body.classList.remove("menu-open");
-        mobMenuOpen = false;
+    mobWrap.classList.add('notActive');
+    document.body.classList.remove("menu-open");
+    mobMenuOpen = false;
 })
+
+var swiper = new Swiper(".offerSwiper", {
+    effect: "slide",
+    speed: 600,
+    loop: true,
+    spaceBetween: 50,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
